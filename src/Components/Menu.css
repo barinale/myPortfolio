@@ -1,0 +1,68 @@
+#Menu{
+    background-color: var(--backgournd-color);
+}
+#Menu .MenuClass{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+#Menu .MenuClass .MenuHeaderLogo,
+#Menu .MenuClass .closeButton{
+    position: absolute;
+    top:9px;
+}
+#Menu .MenuClass .MenuHeaderLogo{
+    left:10px;
+}
+#Menu .MenuClass .closeButton{
+    right:10px;
+    transition: .4s transform;
+    transform: rotate(-90deg);
+}
+#Menu .MenuClass .closeButton:hover{
+    transform: rotate(0);
+}
+
+#Menu .MenuClass .closeButton div{
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+
+#Menu .MenuClass .closeButton span{
+    width:40px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+}
+#Menu .MenuClass .closeButton span:nth-child(1){
+    transform: translate(-50%,-35%) rotate(45deg);
+}
+#Menu .MenuClass .closeButton span:nth-child(2){
+    transform: translate(-35%,-50%) rotate(-45deg);
+}
+
+
+#Menu .MenuClass nav ul{
+
+}
+#Menu .MenuClass nav ul li{
+    text-align: center;
+    margin:.6em 0;
+}
+#Menu .MenuClass nav ul li a{
+    color:var(--primary-color);
+    font-size: 2.4em;
+    text-transform: uppercase;
+}
+
+
+
+
+
