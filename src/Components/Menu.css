@@ -1,6 +1,28 @@
+
 #Menu{
     background-color: var(--backgournd-color);
+    position: relative;
 }
+#Menu::after{
+    content: attr(data-test-id);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size:8em;
+    z-index: 2;
+    letter-spacing: 60px;
+    transition: 0.4s all;
+    font-family: 'Montoro';
+    opacity: 0;
+}
+#Menu.hover::after{
+    color:var(--primary-color);
+    letter-spacing: 0;
+    opacity: .5;
+}
+
+
 #Menu .MenuClass{
     display: flex;
     display: flex;
@@ -8,6 +30,7 @@
     align-items: center;
     height: 100vh;
     position: relative;
+    z-index: 10;
 }
 #Menu .MenuClass .MenuHeaderLogo,
 #Menu .MenuClass .closeButton{
