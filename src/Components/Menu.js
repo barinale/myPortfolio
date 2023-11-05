@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './Menu.css'
-export const Menu = () => {
+export const Menu = ({show,MenuClicking}) => {
+    console.log(show)
     const Menu = useRef()
     const handHover = (e)=>{
         Menu.current.setAttribute('data-test-id',e.target.innerText)
@@ -13,29 +14,32 @@ export const Menu = () => {
     }
 
   return (
-    <div id="Menu" ref={Menu} data-test-id="">
-            <div className='container'>
-                <div className='MenuClass'>
-                    <div className='MenuHeaderLogo'>
-                        <img src='' alt='M'/>
+    <div className={`MenuHeader ${show ? "MenuShow":""}`}>
+
+        <div id="Menu" ref={Menu} data-test-id="">
+                <div className='container'>
+                    <div className='MenuClass'>
+                        <div className='MenuHeaderLogo'>
+                            <img src='' alt='M'/>
+                        </div>
+                        <div className='closeButton'>
+                            <div onClick={MenuClicking}>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">home</a></li>
+                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>about</a></li>
+                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>blog</a></li>
+                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</a></li>
+                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div className='closeButton'>
-                    <div>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">home</a></li>
-                            <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>about</a></li>
-                            <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>blog</a></li>
-                            <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</a></li>
-                            <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>contact</a></li>
-                        </ul>
-                    </nav>
                 </div>
-            </div>
+        </div>
     </div>
   )
 }

@@ -1,7 +1,21 @@
-
+.MenuHeader{
+    position: absolute;
+    width:100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: .4s all;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+.MenuShow{
+    max-height: 100vh;
+}
 #Menu{
-    background-color: var(--backgournd-color);
+    background-color: var(--background-menu-color);
     position: relative;
+    padding:1em 0;
 }
 #Menu::after{
     content: attr(data-test-id);
@@ -72,9 +86,7 @@
 }
 
 
-#Menu .MenuClass nav ul{
 
-}
 #Menu .MenuClass nav ul li{
     text-align: center;
     margin:.6em 0;

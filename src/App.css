@@ -4,6 +4,7 @@
 }
 :root{
   --backgournd-color:#101010;
+  --background-menu-color:#020202;
   --primary-color:#F5F5F5;
   --secound-color:#C70039;
 }
@@ -17,4 +18,8 @@ a{text-decoration: none;}
 
 html,body{
   overflow-y: hidden;
+}
+.container{
+  width: 90%;
+  margin: auto;
 }
