@@ -17,7 +17,7 @@ ul{list-style: none;}
 a{text-decoration: none;}
 
 html,body{
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .container{
   width: 90%;
