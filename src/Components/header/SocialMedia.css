@@ -4,6 +4,7 @@
     width: 100%;
     text-align: center;
     height: 100px;
+    z-index: 40;
 }
 #SocialMedia ul{
     display: flex;
@@ -26,3 +27,18 @@
 }
 
 
+@media (min-width:1030px) {
+    #SocialMedia{
+        left:4%;
+        top:50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        width: auto;
+        height: auto;
+    }
+    #SocialMedia ul{
+        flex-direction: column;
+    }
+
+    
+}
