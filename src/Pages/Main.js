@@ -9,7 +9,6 @@ export const Main = () => {
 
   return (
     <div id="MainSection">
-        <Header />
         <Info />
         <SocialMedia />
     </div>

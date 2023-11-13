@@ -23,3 +23,6 @@ html,body{
   width: 90%;
   margin: auto;
 }
+.App{
+  position: relative;
+}
