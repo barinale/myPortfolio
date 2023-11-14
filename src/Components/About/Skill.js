@@ -1,19 +1,17 @@
 import React from 'react'
-
+import './skil.css'
 export const Skill = ({skil,perc}) => {
     
     const MyStyle = {
-        color:'red',
         width:perc,
-        background:"red"
 
     }
 
   return (
-    <div className='skil'>
+    <div className='skil' >
         <h4>{skil}</h4>
         <div className='progress'>
-            
+            <span style={MyStyle}>{perc}</span>
         </div>
     </div>
   )
