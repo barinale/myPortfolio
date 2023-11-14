@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import './Menu.css'
+import { Link } from 'react-router-dom'
 export const Menu = ({show,MenuClicking}) => {
     console.log(show)
     const Menu = useRef()
@@ -30,11 +31,11 @@ export const Menu = ({show,MenuClicking}) => {
                         </div>
                         <nav>
                             <ul>
-                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">home</a></li>
-                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>about</a></li>
-                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>blog</a></li>
-                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</a></li>
-                                <li><a href="" onMouseOver={handHover} onMouseLeave={handLeave}>contact</a></li>
+                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>about</Link></li>
+                                <li><Link to="/about" onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">home</Link></li>
+                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>blog</Link></li>
+                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</Link></li>
+                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>contact</Link></li>
                             </ul>
                         </nav>
                     </div>
