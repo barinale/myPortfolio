@@ -9,18 +9,25 @@ export const MySkills = () => {
     {skil:'React js',perc:'70%'},
     {skil:'php',perc:'90%'},
     {skil:'Laravel',perc:'90%'},
+    {skil:'My Sql',perc:'90%'},
+    {skil:'Photoshop',perc:'60%'},
+    {skil:'Git ',perc:'80%'},
+
   
   ])
   return (
     <div className='container'>
       <div className='skills'>
-        <h1>My <span>Skills</span></h1>
+        <div className='HeaderSkills'>
+          <h1>My <span>Skills</span></h1>
+        </div>
+        <div className='ItemSkills'>
+                {skills.map((item)=>{
+                  return  <Skill skil={item.skil} perc={item.perc} />
+
+                })}
+        </div>
       </div>
-
-    {skills.map((item)=>{
-      return  <Skill skil={item.skil} perc={item.perc} />
-
-    })}
 
 
 
