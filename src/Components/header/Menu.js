@@ -33,7 +33,7 @@ export const Menu = ({show,MenuClicking}) => {
                             <ul>
                                 <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>home</Link></li>
                                 <li><Link to="/about" onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">About</Link></li>
-                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</Link></li>
+                                <li><Link to="/Portfolio" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</Link></li>
                                 <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>contact</Link></li>
                             </ul>
                         </nav>
