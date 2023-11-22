@@ -13,7 +13,9 @@ export const Menu = ({show,MenuClicking}) => {
         Menu.current.classList.remove('hover');
 
     }
-
+    const HandlClick = ()=>{
+        MenuClicking()
+    }
   return (
     <div className={`MenuHeader ${show ? "MenuShow":""}`}>
 
@@ -31,10 +33,10 @@ export const Menu = ({show,MenuClicking}) => {
                         </div>
                         <nav>
                             <ul>
-                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>home</Link></li>
-                                <li><Link to="/about" onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">About</Link></li>
-                                <li><Link to="/Portfolio" onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</Link></li>
-                                <li><Link to="" onMouseOver={handHover} onMouseLeave={handLeave}>contact</Link></li>
+                                <li><Link to="" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>home</Link></li>
+                                <li><Link to="/about" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">About</Link></li>
+                                <li><Link to="/Portfolio" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</Link></li>
+                                <li><Link to="" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>contact</Link></li>
                             </ul>
                         </nav>
                     </div>

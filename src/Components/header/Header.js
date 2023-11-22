@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Menu } from './Menu'
 import './Header.css'
 export const Header = () => {
@@ -7,6 +7,9 @@ export const Header = () => {
     const MenuShowButton = ()=>{
         SetShwoMenu(!showMenu)
       }
+useEffect(()=>{
+  console.log('tetsing bto')
+})
   return (
     <header id="header">
           <nav className='container'>
