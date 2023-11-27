@@ -13,10 +13,10 @@
     align-items: center;
 }
 
-#header > nav > ul img{
+#header > nav > ul li:nth-child(1){
     height: 60px;
     width:60px;
-    background-color: red;
+    
 }
 
 #header > nav > ul button{

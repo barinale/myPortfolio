@@ -11,9 +11,9 @@ export const Info = () => {
             <TypeAnimation
                 sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    'Devllepeur',
+                    '',
                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                    'Front End',
+                    'a front-end developer',
                     1000,
              
                 ]}

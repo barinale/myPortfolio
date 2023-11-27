@@ -9,8 +9,8 @@ export const InfoAbout = () => {
                 <img src={MeImage} alt="Image Not Found" />
             </div>
             <div className='AboutMeText'>
-                <h1>I'm Creative <span> web Developer </span> based In Rabat</h1>
-                <p>Im' A junior devlopeur passion About bara anad bara and Also bara and so on sof ro </p>
+                <h1>I'm  <span>Mohammed Mekkaoui. </span>  I'm <span>27 years</span>  old.</h1>
+                <p>  I'm passionate about technology and the world of IT, especially programming. So, I try to improve myself every day in this area </p>
             </div>
             <div className='ButtonCv'>
                 <a href='MyResume.pdf' download>Download CV</a>

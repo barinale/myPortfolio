@@ -12,8 +12,8 @@ export const Project = ({project}) => {
          
 
             <ul>
-                <li><a href={UrlCode} target='_blank'>Experience it live </a></li>
-                <li><a href={UrlView} target='_blank'>Check out the code</a></li>
+                <li><a href={UrlView} target='_blank'>Experience it live </a></li>
+                <li><a href={UrlCode} target='_blank'>Check out the code</a></li>
             </ul>
             <div className='TechnologyUsed'>
               {TechnologyUser.map((item,index)=>{

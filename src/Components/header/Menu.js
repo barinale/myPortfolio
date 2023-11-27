@@ -23,7 +23,6 @@ export const Menu = ({show,MenuClicking}) => {
                 <div className='container'>
                     <div className='MenuClass'>
                         <div className='MenuHeaderLogo'>
-                            <img src='' alt='M'/>
                         </div>
                         <div className='closeButton'>
                             <div onClick={MenuClicking}>
@@ -36,7 +35,7 @@ export const Menu = ({show,MenuClicking}) => {
                                 <li><Link to="" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>home</Link></li>
                                 <li><Link to="/about" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave} data-test-id="">About</Link></li>
                                 <li><Link to="/Portfolio" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>portfolio</Link></li>
-                                <li><Link to="" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>contact</Link></li>
+                                <li><Link to="/Contact" onClick={()=>HandlClick()} onMouseOver={handHover} onMouseLeave={handLeave}>contact</Link></li>
                             </ul>
                         </nav>
                     </div>

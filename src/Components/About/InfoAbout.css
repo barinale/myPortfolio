@@ -1,5 +1,5 @@
 .InfoAbout{
-    margin: 5em 0;
+    margin:5em 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -63,10 +63,10 @@
         margin-bottom: 1em;
     }
     .InfoAbout .imageAbout{ 
-        /* width: 25%; */
+        width: 25%;
     }
     .InfoAbout .AboutMeText {
-        /* width: 65%; */
+        width: 65%;
     }
     .InfoAbout .AboutMeText p{
         font-size: 1.3em;

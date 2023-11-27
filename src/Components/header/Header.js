@@ -14,7 +14,7 @@ useEffect(()=>{
     <header id="header">
           <nav className='container'>
             <ul>
-                <li><img src='' /></li>
+                <li></li>
                 <li>
                     <button className='navMenuButton' 
                             onClick={MenuShowButton}>
