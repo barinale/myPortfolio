@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Skill } from './Skill'
 import './skill.css'
 export const MySkills = () => {
-  const [skills , setSkills] =useState([
+  const skills =[
     {id:1,skil:'Html / css',perc:'90%'},
     {id:2,skil:'Javascript',perc:'90%'},
     {id:3,skil:'responsive Design',perc:'90%'},
@@ -14,7 +14,7 @@ export const MySkills = () => {
     {id:9,skil:'Git ',perc:'80%'},
 
   
-  ])
+  ]
   return (
     <div className='container'>
       <div className='skills'>

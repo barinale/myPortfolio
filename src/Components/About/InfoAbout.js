@@ -6,7 +6,7 @@ export const InfoAbout = () => {
     <div className='container'>
         <div className='InfoAbout'>
             <div className='imageAbout'>
-                <img src={MeImage} alt="Image Not Found" />
+                <img src={MeImage} alt="Mohammed Mekkaoui" />
             </div>
             <div className='AboutMeText'>
                 <h1>I'm  <span>Mohammed Mekkaoui. </span>  I'm <span>27 years</span>  old.</h1>
