@@ -1,0 +1,23 @@
+.Form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Form form input,.Form form textarea{
+    background-color: var(--background-menu-color);
+    border:none;
+    padding:.6em .4em;
+    color:var(--color-text);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+.Form form button{
+    background-color: var(--secound-color);
+    padding:.5em .3em;
+    font-weight: 500;
+    font-size: 1.4em;
+    display: inline-block;
+    border:none;
+    width: 100px;
+    border-radius: 10px;
+}

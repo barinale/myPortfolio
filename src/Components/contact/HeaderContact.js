@@ -5,7 +5,7 @@ export const HeaderContact = () => {
   return (
     <div className='container'>
       <div className='HeaderComponent'>
-         <h1>About <span >Me</span></h1>
+         <h1>Contact <span >Me</span></h1>
       </div>
     </div>
   )
