@@ -6,17 +6,14 @@ export const ContactForm = () => {
     const [Subject,setSubject]= useState('')
     const [message,setmessage]= useState('')
 
-    const hanld = (e)=>{
-        e.preventDefault();
-        console.log("test")
-    }
   return (
     <div className='Form'>
-            <form onSubmit={hanld}>
-                <input type='text' name='Name' value={Name} placeholder='Name' onChange={e => setName(e.target.value)}/>
-                <input type='email' name='Email' value={Email} placeholder='Email' onChange={e => setEmail(e.target.value)}/>
-                <input type='text' name='Subject' value={Subject} placeholder='Subject' onChange={e => setSubject(e.target.value)}/>
-                <textarea placeholder='Message' rows="4" cols="50" value={message} onChange={e => setmessage(e.target.value)}/>
+          <h1 className='titleContacts'>Message Me</h1>
+            <form action="https://formsubmit.co/mekkmohammed08@gmail.com" method="POST">
+                <input type='text' name='Name'  placeholder='Name' />
+                <input type='email' name='Email'  placeholder='Email' />
+                <input type='text' name='Subject'  placeholder='Subject' />
+                <textarea placeholder='Message' rows="4" cols="50"  />
                 <button type='submit'>Submit</button>
             </form>
     </div>

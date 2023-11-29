@@ -1,8 +1,21 @@
+.Form{
+    width: 80%;
+    margin: auto;
+}
+.Form .titleContacts{
+    font-size:1.6em;
+    font-weight: 400;
+    text-align: center;
+    padding: 2em 0;
+}
+
 .Form form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap:1em;
 }
+
 .Form form input,.Form form textarea{
     background-color: var(--background-menu-color);
     border:none;
@@ -10,7 +23,9 @@
     color:var(--color-text);
     font-size: 1.1em;
     font-weight: 400;
+    border-radius: 10px;
 }
+
 .Form form button{
     background-color: var(--secound-color);
     padding:.5em .3em;
@@ -20,4 +35,5 @@
     border:none;
     width: 100px;
     border-radius: 10px;
+    margin: auto;
 }
