@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <div id="contact">
         <HeaderContact/>
-        <div>
+        <div className='contactFields'>
           <ContactForm />
           <ContactInfo />
         </div>

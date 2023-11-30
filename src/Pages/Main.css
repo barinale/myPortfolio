@@ -2,7 +2,7 @@
         background-color: var(--backgournd-color);
         background-image: url("./../assests/mePhoto.png") ;
         background-size:400px;
-        background-position:100% 100%;
+        background-position:-100% 100%;
         background-repeat: no-repeat;
         height: 100vh;
         width: 100%;
@@ -12,8 +12,17 @@
 @media (min-width:361px) {
 
         #MainSection{
-        background-size:600px;
+        background-size:400px;
+        background-position:0 100%;
 
         }
         
+}
+@media (min-width:720px) {
+
+        #MainSection{
+                background-size:600px;
+                background-position:100% 100%;
+        
+                }     
 }

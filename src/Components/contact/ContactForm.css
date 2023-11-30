@@ -37,3 +37,16 @@
     border-radius: 10px;
     margin: auto;
 }
+@media (min-width:1024px) {
+    .Form{
+        width: 40%;
+        margin: auto;
+    }
+    .Form .titleContacts{
+            padding:0;
+            margin-bottom: 2em;;
+    }
+.Form form{
+gap:2em;
+}
+}

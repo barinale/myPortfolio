@@ -7,9 +7,9 @@ export const MySkills = () => {
     {id:2,skil:'Javascript',perc:'90%'},
     {id:3,skil:'responsive Design',perc:'90%'},
     {id:4,skil:'React js',perc:'70%'},
-    {id:5,skil:'php',perc:'90%'},
-    {id:6,skil:'Laravel',perc:'90%'},
-    {id:7,skil:'My Sql',perc:'90%'},
+    {id:5,skil:'php',perc:'60%'},
+    {id:6,skil:'Laravel',perc:'60%'},
+    {id:7,skil:'My Sql',perc:'70%'},
     {id:8,skil:'Photoshop',perc:'60%'},
     {id:9,skil:'Git ',perc:'80%'},
 
