@@ -49,4 +49,8 @@
 .Form form{
 gap:2em;
 }
+.Form form input,.Form form textarea{
+    padding:2em 2em;
+}
+
 }
